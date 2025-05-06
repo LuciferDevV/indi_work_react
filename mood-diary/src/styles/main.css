@@ -1,0 +1,224 @@
+body {
+    font-family: sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    padding-top: 150px; /* отступ для фиксированного хедера */
+    padding-bottom: 80px; /* отступ для фиксированного футера */
+  }
+  
+  
+  
+  
+  header {
+    background-color: white;
+    padding: 1rem;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    border-radius: 6px;
+    transform: translateX(-50%);
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  form, .card {
+    background: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  }
+  
+  select {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+  
+  input, textarea {
+    display: block;
+    max-width: 747px;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+
+  .error {
+    color: red;
+  }
+  
+  .filter-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+/* Стили для ограниченного текста с многоточием на главной странице */
+.entry-preview {
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Ограничиваем до 3 строк */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Многоточие */
+  
+    line-clamp: 1; /* Стандартное свойство */
+    box-orient: vertical; /* Стандартное свойство */
+  }
+  
+  
+  
+  /* Для полной версии текста на странице записи */
+  .card p {
+    white-space: normal; /* Разрешаем перенос строк */
+    word-wrap: break-word; /* Разрываем слишком длинные слова */
+  }
+  
+  button {
+    background: #007acc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px; /* Скругленные углы */
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 8px 16px;
+    border-radius: 8px; /* Скругленные углы */
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Отступ между кнопками */
+  }
+  
+  .edit-btn {
+    background-color: #4caf50; /* Зеленая кнопка для редактирования */
+  }
+  
+  .delete-btn {
+    background-color: #f44336; /* Красная кнопка для удаления */
+  }
+  
+  .btn:hover {
+    opacity: 0.9; /* Эффект при наведении */
+  }
+  
+  .monthly-summary {
+    border: 2px solid #6366f1;
+    background-color: #eef2ff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 16px;
+    box-shadow: 0 4px 8px rgba(99, 102, 241, 0.2);
+  }
+  
+  .monthly-summary h3 {
+    color: #4338ca;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .monthly-summary ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  
+  .monthly-summary li {
+    margin-bottom: 4px;
+  }
+  
+  .monthly-summary p {
+    font-style: italic;
+  }
+  
+/* Базовая анимация и стили для skeleton */
+.skeleton {
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+/* Контейнеры */
+.skeleton-card {
+  background-color: #f3f4f6;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Линии */
+.skeleton-line {
+  height: 14px;
+  margin-bottom: 10px;
+}
+
+.w-25 { width: 25%; }
+.w-40 { width: 40%; }
+.w-50 { width: 50%; }
+.w-60 { width: 60%; }
+.w-80 { width: 80%; }
+.w-100 { width: 100%; }
+
+
+/* Для отображения элементов в ряд */
+.flex-row {
+  display: flex;
+  gap: 10px;
+}
+
+/* Для меню и заголовка */
+.skeleton-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+/* Обертка всей страницы */
+body, html {
+  height: 100%;
+}
+
+
+
+footer {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  z-index: 10;
+}
