@@ -33,8 +33,8 @@ npm run dev
 
 ## Авторы
 
-* **\Certcov Vladislav**
-* **\Belioglo Alina**  
+* **Certcov Vladislav**
+* **Belioglo Alina**  
 
 ## Описание проекта
 
